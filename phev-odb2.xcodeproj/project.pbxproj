@@ -3,21 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FBDD8F5C5B228479410E570 /* Pods_phev_odb2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5925761C21E33233466C9E2A /* Pods_phev_odb2Tests.framework */; };
-		3D2B2E90B1CA4DC91C05F2BD /* Pods_phev_odb2_phev_odb2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9C5413692B1438237341D9 /* Pods_phev_odb2_phev_odb2UITests.framework */; };
+		463ACA8A5BE73C588329861E /* libPods-phev-odb2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD935A54AC7618C99A6A7140 /* libPods-phev-odb2.a */; };
+		BF468F753FFC18AC1A5A69CA /* libPods-phev-odb2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C27CEF1A8492398F2E3FB26 /* libPods-phev-odb2Tests.a */; };
+		C7BF464A1647D03149CEECCF /* libPods-phev-odb2-phev-odb2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9BC04F37BE07D483DE2E19 /* libPods-phev-odb2-phev-odb2UITests.a */; };
+		D0688AA424136750008F2DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0688AA224136750008F2DF1 /* Main.storyboard */; };
+		D0688AA624136812008F2DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0688AA524136812008F2DF1 /* ViewController.swift */; };
+		D0688AF42414C0A1008F2DF1 /* ObdPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0688AF32414C0A1008F2DF1 /* ObdPeripheral.swift */; };
 		D08AEF7924132E1F0091F6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AEF7824132E1F0091F6E7 /* AppDelegate.swift */; };
 		D08AEF7B24132E1F0091F6E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AEF7A24132E1F0091F6E7 /* SceneDelegate.swift */; };
-		D08AEF7D24132E1F0091F6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AEF7C24132E1F0091F6E7 /* ViewController.swift */; };
-		D08AEF8024132E1F0091F6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08AEF7E24132E1F0091F6E7 /* Main.storyboard */; };
 		D08AEF8224132E260091F6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08AEF8124132E260091F6E7 /* Assets.xcassets */; };
 		D08AEF8524132E260091F6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08AEF8324132E260091F6E7 /* LaunchScreen.storyboard */; };
 		D08AEF9024132E260091F6E7 /* phev_odb2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AEF8F24132E260091F6E7 /* phev_odb2Tests.swift */; };
 		D08AEF9B24132E270091F6E7 /* phev_odb2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08AEF9A24132E270091F6E7 /* phev_odb2UITests.swift */; };
-		D08AEFA92413306F0091F6E7 /* Pods_phev_odb2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08AEFA82413306F0091F6E7 /* Pods_phev_odb2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +45,15 @@
 		3AD02B4BA193FBB7A367579E /* Pods_phev_odb2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phev_odb2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C430CB11EDEFEF53B210CFA /* Pods-phev-odb2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phev-odb2.debug.xcconfig"; path = "Target Support Files/Pods-phev-odb2/Pods-phev-odb2.debug.xcconfig"; sourceTree = "<group>"; };
 		5188003705E0249B1F97010B /* Pods-phev-odb2-phev-odb2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phev-odb2-phev-odb2UITests.debug.xcconfig"; path = "Target Support Files/Pods-phev-odb2-phev-odb2UITests/Pods-phev-odb2-phev-odb2UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5925761C21E33233466C9E2A /* Pods_phev_odb2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phev_odb2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		704FA4266D0892A0383D97B2 /* Pods-phev-odb2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-phev-odb2.release.xcconfig"; path = "Target Support Files/Pods-phev-odb2/Pods-phev-odb2.release.xcconfig"; sourceTree = "<group>"; };
-		AB9C5413692B1438237341D9 /* Pods_phev_odb2_phev_odb2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phev_odb2_phev_odb2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C27CEF1A8492398F2E3FB26 /* libPods-phev-odb2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-phev-odb2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD935A54AC7618C99A6A7140 /* libPods-phev-odb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-phev-odb2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0688AA324136750008F2DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0688AA524136812008F2DF1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0688AF32414C0A1008F2DF1 /* ObdPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObdPeripheral.swift; sourceTree = "<group>"; };
 		D08AEF7524132E1F0091F6E7 /* phev-odb2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phev-odb2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08AEF7824132E1F0091F6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D08AEF7A24132E1F0091F6E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D08AEF7C24132E1F0091F6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D08AEF7F24132E1F0091F6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D08AEF8124132E260091F6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08AEF8424132E260091F6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D08AEF8624132E260091F6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		D08AEF9624132E260091F6E7 /* phev-odb2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "phev-odb2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08AEF9A24132E270091F6E7 /* phev_odb2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phev_odb2UITests.swift; sourceTree = "<group>"; };
 		D08AEF9C24132E270091F6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D08AEFA82413306F0091F6E7 /* Pods_phev_odb2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_phev_odb2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE9BC04F37BE07D483DE2E19 /* libPods-phev-odb2-phev-odb2UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-phev-odb2-phev-odb2UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08AEFA92413306F0091F6E7 /* Pods_phev_odb2.framework in Frameworks */,
+				463ACA8A5BE73C588329861E /* libPods-phev-odb2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FBDD8F5C5B228479410E570 /* Pods_phev_odb2Tests.framework in Frameworks */,
+				BF468F753FFC18AC1A5A69CA /* libPods-phev-odb2Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2B2E90B1CA4DC91C05F2BD /* Pods_phev_odb2_phev_odb2UITests.framework in Frameworks */,
+				C7BF464A1647D03149CEECCF /* libPods-phev-odb2-phev-odb2UITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,10 +110,10 @@
 		B9574A4401C26750640570F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D08AEFA82413306F0091F6E7 /* Pods_phev_odb2.framework */,
 				3AD02B4BA193FBB7A367579E /* Pods_phev_odb2.framework */,
-				AB9C5413692B1438237341D9 /* Pods_phev_odb2_phev_odb2UITests.framework */,
-				5925761C21E33233466C9E2A /* Pods_phev_odb2Tests.framework */,
+				AD935A54AC7618C99A6A7140 /* libPods-phev-odb2.a */,
+				DE9BC04F37BE07D483DE2E19 /* libPods-phev-odb2-phev-odb2UITests.a */,
+				8C27CEF1A8492398F2E3FB26 /* libPods-phev-odb2Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,11 +145,12 @@
 			children = (
 				D08AEF7824132E1F0091F6E7 /* AppDelegate.swift */,
 				D08AEF7A24132E1F0091F6E7 /* SceneDelegate.swift */,
-				D08AEF7C24132E1F0091F6E7 /* ViewController.swift */,
-				D08AEF7E24132E1F0091F6E7 /* Main.storyboard */,
+				D0688AA524136812008F2DF1 /* ViewController.swift */,
 				D08AEF8124132E260091F6E7 /* Assets.xcassets */,
+				D0688AA224136750008F2DF1 /* Main.storyboard */,
 				D08AEF8324132E260091F6E7 /* LaunchScreen.storyboard */,
 				D08AEF8624132E260091F6E7 /* Info.plist */,
+				D0688AF32414C0A1008F2DF1 /* ObdPeripheral.swift */,
 			);
 			path = "phev-odb2";
 			sourceTree = "<group>";
@@ -181,7 +184,6 @@
 				D08AEF7124132E1F0091F6E7 /* Sources */,
 				D08AEF7224132E1F0091F6E7 /* Frameworks */,
 				D08AEF7324132E1F0091F6E7 /* Resources */,
-				06AB088FF5C16C6CBD8354EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,7 +221,6 @@
 				D08AEF9224132E260091F6E7 /* Sources */,
 				D08AEF9324132E260091F6E7 /* Frameworks */,
 				D08AEF9424132E260091F6E7 /* Resources */,
-				031C0ABC711A73DC271CD17F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,9 +280,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0688AA424136750008F2DF1 /* Main.storyboard in Resources */,
 				D08AEF8524132E260091F6E7 /* LaunchScreen.storyboard in Resources */,
 				D08AEF8224132E260091F6E7 /* Assets.xcassets in Resources */,
-				D08AEF8024132E1F0091F6E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,40 +303,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		031C0ABC711A73DC271CD17F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-phev-odb2-phev-odb2UITests/Pods-phev-odb2-phev-odb2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-phev-odb2-phev-odb2UITests/Pods-phev-odb2-phev-odb2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phev-odb2-phev-odb2UITests/Pods-phev-odb2-phev-odb2UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		06AB088FF5C16C6CBD8354EC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-phev-odb2/Pods-phev-odb2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-phev-odb2/Pods-phev-odb2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-phev-odb2/Pods-phev-odb2-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		75C6E96C84E74C14A88CA8B0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,9 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08AEF7D24132E1F0091F6E7 /* ViewController.swift in Sources */,
+				D0688AA624136812008F2DF1 /* ViewController.swift in Sources */,
 				D08AEF7924132E1F0091F6E7 /* AppDelegate.swift in Sources */,
 				D08AEF7B24132E1F0091F6E7 /* SceneDelegate.swift in Sources */,
+				D0688AF42414C0A1008F2DF1 /* ObdPeripheral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +415,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D08AEF7E24132E1F0091F6E7 /* Main.storyboard */ = {
+		D0688AA224136750008F2DF1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D08AEF7F24132E1F0091F6E7 /* Base */,
+				D0688AA324136750008F2DF1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -586,17 +554,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X8Q5W6WGK;
+				DEVELOPMENT_TEAM = KNRM248MZK;
 				INFOPLIST_FILE = "phev-odb2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.phenterprises.phev-odb2";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.prenterprises.phev-odb2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -606,17 +574,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X8Q5W6WGK;
+				DEVELOPMENT_TEAM = KNRM248MZK;
 				INFOPLIST_FILE = "phev-odb2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.phenterprises.phev-odb2";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.prenterprises.phev-odb2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -627,7 +595,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X8Q5W6WGK;
+				DEVELOPMENT_TEAM = KNRM248MZK;
 				INFOPLIST_FILE = "phev-odb2Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,7 +618,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8X8Q5W6WGK;
+				DEVELOPMENT_TEAM = KNRM248MZK;
 				INFOPLIST_FILE = "phev-odb2Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -671,6 +639,7 @@
 			baseConfigurationReference = 5188003705E0249B1F97010B /* Pods-phev-odb2-phev-odb2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X8Q5W6WGK;
 				INFOPLIST_FILE = "phev-odb2UITests/Info.plist";
@@ -692,6 +661,7 @@
 			baseConfigurationReference = 1820CB5436CC9CC248F05FDC /* Pods-phev-odb2-phev-odb2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8X8Q5W6WGK;
 				INFOPLIST_FILE = "phev-odb2UITests/Info.plist";

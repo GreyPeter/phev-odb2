@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02BFA38247437DDE285E68EEDB7D8F9B /* Descriptor09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652223A7F0C570285702523444DA57C0 /* Descriptor09.swift */; };
+		0AB2B411CB10156087E5E35364633BDD /* CommandOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1939C96E7AC43BAD93C13AAB88BD7 /* CommandOperation.swift */; };
+		0B0FFC4B0550AEC55DCF06994D4958A9 /* Pods-phev-odb2-phev-odb2UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F66DFCD0DC326753736C4CB3713641 /* Pods-phev-odb2-phev-odb2UITests-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F57C2AF1CA98B571639092153BE6BFA /* ProtocolModelDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7361194DE6B3090EAEC629127377A4 /* ProtocolModelDescription.swift */; };
+		193414F1E526DC5FC45111D896AD59D9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB243B5FC321E182D55D237032AEB934 /* Logger.swift */; };
+		2FBCE616346ED91429845C5D02FE907E /* CommandMode01.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9548A1A6B6AF1F6869174FCCE0B33 /* CommandMode01.swift */; };
+		2FEF9E60BF926D9406B3E30E6D279CB6 /* DescriptorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0642EB255D71AF2D9C79119089D1B639 /* DescriptorProtocol.swift */; };
+		3668020B4402E7A4C8F980506E6AC082 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9F394B40B8876C75650B7DEFDF2C4B /* Parser.swift */; };
+		44FF284EA21A068321ABCB8E0BE92FD1 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D492B3E805545D3C4AA4A870037FA06 /* StreamReader.swift */; };
+		4EF82A005207CB23BDAADCED5A98CF6C /* OBD2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 49DE7A6A5958A9A69D8DAA8AF41E5CAC /* OBD2Swift.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56784A530137CEA98D14BF9368D6D66D /* Pods-phev-odb2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F7A039B1CAB67A3A155E8954314F6B /* Pods-phev-odb2-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C30823E67F88BB03A50E7D4BECE1766 /* SensorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EBAFC89803A2711702EA42EA09E4FD /* SensorList.swift */; };
+		70E47361D0200286DB06D20752B74249 /* SensorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FF6407228C4397BB93520539B3492 /* SensorObserver.swift */; };
+		7106F6B407518DAEE50190C32904CB44 /* StreamHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A46DAF9EA35037939F0F1BD09CC826 /* StreamHolder.swift */; };
+		7C941419BF40111AE5D2C54ACD1450F6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4EEEC71B33564527DE954EAED179C3 /* Response.swift */; };
+		7F31244407E96AB9F99C7D57D523C98A /* CommandMode03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DB520885F833D8318EC379E0FCC3DA /* CommandMode03.swift */; };
+		88F65EADADCD47B7C726537B7573C85F /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232937D014D29C97B3148215CF5C17A /* DataRequest.swift */; };
+		8DFB3FFBC88E97C24ADEC12017B799E9 /* OpenOBDConnectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A705D1E25260A2CA69A8E8B83EFCEB /* OpenOBDConnectionOperation.swift */; };
+		9036956376B444D223120E0F060C1D58 /* Pods-phev-odb2Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0439AAA5FB12A77147BC4D2275DCA69 /* Pods-phev-odb2Tests-dummy.m */; };
+		948FACE587773790EFB6E39E83C5F810 /* SensorDescriptorTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECC44C40589F2BC31EFE315FE7AFB35 /* SensorDescriptorTable.swift */; };
+		9AED6C99B92AFCE877F123036BC825A8 /* StreamError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD62463AE40B2887C9E43772591AF2A /* StreamError.swift */; };
+		9F0CC50087A87B6A9F47A08CC9269527 /* SensorDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955766237059DC958D3584FF30BB57ED /* SensorDescriptor.swift */; };
+		A0CEE9E0BBAF65BD03D86AA9970B0C45 /* StreamHandleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DDFCC0DE08B0504F8133D9685F1887 /* StreamHandleOperation.swift */; };
+		B553C83DA809E8B7708C1226677EA741 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2E3FAB2BE0F33102AA0CA4BE590362 /* Mode.swift */; };
+		C17D5180184DC5E6CA5815DC4412F8CC /* GloablCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC32713C06E25DEB124439D81A2602 /* GloablCalculator.swift */; };
+		D2392062096007C5932EB74A43564715 /* StringDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB67DE6B9D5C2A4B9D9375C9FDEA64 /* StringDescriptor.swift */; };
+		D7402D8BD5CEBCBBDE1F54632714CE4B /* ScanProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E64456A59DEA99E65B89C0F0E2BC20A /* ScanProtocol.swift */; };
+		D7A23AE7E49986894E0D0C52982D7323 /* CommandMode02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4296171C0B74472BC5F2C86D29179 /* CommandMode02.swift */; };
+		DCF6A2B57FE6903C27F04E2B649F3B1D /* Descriptor01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D04620026926F31753686A2A1BCCE47 /* Descriptor01.swift */; };
+		DE9D0F650E4AC60DF5449A7C78F4EC1B /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0D9D53B26EA6288F1FF8B3FE2057D9 /* Command.swift */; };
+		E0AC65E71125A04E478B5836C03E96C7 /* Pods-phev-odb2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6352F0AA1FAE9C72D607B6AD4F1DD /* Pods-phev-odb2-dummy.m */; };
+		E266567C435273FEA581E7CA5EFAB420 /* OBD2-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DB0CB5AB2D8CC110F0C68E49E27CE2 /* OBD2-Swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2A756C3410862FEBBA86AE7A3D3A618 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F8DB72EA6F419616496132235DC3DA /* Package.swift */; };
+		E3C9204C50AF65B1B28B8C9BB1A6CF51 /* OBD2Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002DEAF03E5B13C4446335775DB35D66 /* OBD2Facade.swift */; };
+		E492F6DCB3566AFEBE65052744DC7AF7 /* InitScanerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09D52BB9DE13587199D0FECA5B0D43A /* InitScanerOperation.swift */; };
+		E86171E8A548E43395D69C3FC947A38F /* OBD2-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C08CD906B4942F654649899C4899808 /* OBD2-Swift-dummy.m */; };
+		EEC04E006D27FA9ABD07287E6C8BC3E5 /* ScanState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A907FC242D40EDDC80B449E3F9383541 /* ScanState.swift */; };
+		F8967C566D388FF04558B78E352B620E /* Pods-phev-odb2-phev-odb2UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B059DF9A3F957C82C22308A08952C15 /* Pods-phev-odb2-phev-odb2UITests-dummy.m */; };
+		FA68B905FE01F3F9E89640B77045761E /* CommandMode09.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6841ECEC5BB6A2E335A0C70C56BF1904 /* CommandMode09.swift */; };
+		FAA314A52131DCBDC1F10A18B9C89F04 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CAFCC19E995C5C996DC34B6AD23736 /* Macros.swift */; };
+		FB20F2444AAFEFE9FEDA833939BE317B /* Descriptor03.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6420BE62845194AA92F7DF9BBF71E /* Descriptor03.swift */; };
+		FB4050D6F562B59E225C7F4D2913B9AF /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D299C72089F537A7BCE153459646A761 /* Scanner.swift */; };
+		FFD09583BA12EE5833EB4121F09C59D3 /* StreamWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE43728AB70C91064F27CAB15CF3120 /* StreamWriter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0937830DAFF88C4FB0CAB07BA08CDBEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A1B9DCB60E7E1322CA9AB8B8B1208D;
+			remoteInfo = "OBD2-Swift";
+		};
+		3BA0E6C3786D09E1855126F6A9006B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF3B42015A94FEE06DF7358F507B572E;
+			remoteInfo = "Pods-phev-odb2";
+		};
+		6E2E96C391282C7CCD64335C0768A76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92A1B9DCB60E7E1322CA9AB8B8B1208D;
+			remoteInfo = "OBD2-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002DEAF03E5B13C4446335775DB35D66 /* OBD2Facade.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OBD2Facade.swift; path = "OBD2-Swift/Classes/OBD2Facade.swift"; sourceTree = "<group>"; };
+		0642EB255D71AF2D9C79119089D1B639 /* DescriptorProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DescriptorProtocol.swift; path = "OBD2-Swift/Classes/Parser/DescriptorProtocol.swift"; sourceTree = "<group>"; };
+		0A5EA8F90F0BFAAD7933010E2EBB6297 /* Pods-phev-odb2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-phev-odb2.modulemap"; sourceTree = "<group>"; };
+		0E9F394B40B8876C75650B7DEFDF2C4B /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = "OBD2-Swift/Classes/Parser/Parser.swift"; sourceTree = "<group>"; };
+		11A46DAF9EA35037939F0F1BD09CC826 /* StreamHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamHolder.swift; path = "OBD2-Swift/Classes/Scanner/StreamHolder.swift"; sourceTree = "<group>"; };
+		120FB4CE7F0B6A62F2DB27794560E8A8 /* Pods-phev-odb2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phev-odb2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CE22BA8749D4EAEF985207C25BBB678 /* Pods-phev-odb2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phev-odb2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1CE43728AB70C91064F27CAB15CF3120 /* StreamWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamWriter.swift; path = "OBD2-Swift/Classes/Stream/StreamWriter.swift"; sourceTree = "<group>"; };
+		1D7361194DE6B3090EAEC629127377A4 /* ProtocolModelDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtocolModelDescription.swift; path = "OBD2-Swift/Classes/Classes/ProtocolModelDescription.swift"; sourceTree = "<group>"; };
+		20CAFCC19E995C5C996DC34B6AD23736 /* Macros.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Macros.swift; path = "OBD2-Swift/Classes/Common/Macros.swift"; sourceTree = "<group>"; };
+		2232937D014D29C97B3148215CF5C17A /* DataRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequest.swift; path = "OBD2-Swift/Classes/Command/DataRequest.swift"; sourceTree = "<group>"; };
+		28F66DFCD0DC326753736C4CB3713641 /* Pods-phev-odb2-phev-odb2UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-phev-odb2-phev-odb2UITests-umbrella.h"; sourceTree = "<group>"; };
+		2B0D9D53B26EA6288F1FF8B3FE2057D9 /* Command.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Command.swift; path = "OBD2-Swift/Classes/Model/Command.swift"; sourceTree = "<group>"; };
+		2C08CD906B4942F654649899C4899808 /* OBD2-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OBD2-Swift-dummy.m"; sourceTree = "<group>"; };
+		2C92240516795FEC7BBBCE675CAA45A6 /* Pods-phev-odb2Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phev-odb2Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E64456A59DEA99E65B89C0F0E2BC20A /* ScanProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanProtocol.swift; path = "OBD2-Swift/Classes/Model/ScanProtocol.swift"; sourceTree = "<group>"; };
+		3D3E9DCE0EE54AC04BE4AF5B6D416D80 /* Pods-phev-odb2-phev-odb2UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phev-odb2-phev-odb2UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41DB0CB5AB2D8CC110F0C68E49E27CE2 /* OBD2-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBD2-Swift-umbrella.h"; sourceTree = "<group>"; };
+		49DE7A6A5958A9A69D8DAA8AF41E5CAC /* OBD2Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OBD2Swift.h; path = "OBD2-Swift/Classes/OBD2Swift.h"; sourceTree = "<group>"; };
+		4A57EF44C213E75B56EAB088929E2584 /* Pods-phev-odb2-phev-odb2UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-phev-odb2-phev-odb2UITests.modulemap"; sourceTree = "<group>"; };
+		4AAC32713C06E25DEB124439D81A2602 /* GloablCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GloablCalculator.swift; path = "OBD2-Swift/Classes/Classes/GloablCalculator.swift"; sourceTree = "<group>"; };
+		4CB1939C96E7AC43BAD93C13AAB88BD7 /* CommandOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandOperation.swift; path = "OBD2-Swift/Classes/Operations/CommandOperation.swift"; sourceTree = "<group>"; };
+		54535590065505E11616A162F15DC733 /* OBD2-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OBD2-Swift-prefix.pch"; sourceTree = "<group>"; };
+		5BF6352F0AA1FAE9C72D607B6AD4F1DD /* Pods-phev-odb2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phev-odb2-dummy.m"; sourceTree = "<group>"; };
+		5CF36A74837EE9697917AB4A57A6179A /* Pods-phev-odb2-phev-odb2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phev-odb2-phev-odb2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		652223A7F0C570285702523444DA57C0 /* Descriptor09.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptor09.swift; path = "OBD2-Swift/Classes/Parser/Descriptor09.swift"; sourceTree = "<group>"; };
+		67DB520885F833D8318EC379E0FCC3DA /* CommandMode03.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandMode03.swift; path = "OBD2-Swift/Classes/Command/CommandMode03.swift"; sourceTree = "<group>"; };
+		6841ECEC5BB6A2E335A0C70C56BF1904 /* CommandMode09.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandMode09.swift; path = "OBD2-Swift/Classes/Command/CommandMode09.swift"; sourceTree = "<group>"; };
+		6B2E3FAB2BE0F33102AA0CA4BE590362 /* Mode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mode.swift; path = "OBD2-Swift/Classes/Model/Mode.swift"; sourceTree = "<group>"; };
+		6D04620026926F31753686A2A1BCCE47 /* Descriptor01.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptor01.swift; path = "OBD2-Swift/Classes/Parser/Descriptor01.swift"; sourceTree = "<group>"; };
+		6D4EEEC71B33564527DE954EAED179C3 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = "OBD2-Swift/Classes/Model/Response.swift"; sourceTree = "<group>"; };
+		73DB67DE6B9D5C2A4B9D9375C9FDEA64 /* StringDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringDescriptor.swift; path = "OBD2-Swift/Classes/Parser/StringDescriptor.swift"; sourceTree = "<group>"; };
+		74EBAFC89803A2711702EA42EA09E4FD /* SensorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SensorList.swift; path = "OBD2-Swift/Classes/Classes/SensorList.swift"; sourceTree = "<group>"; };
+		76B48224BF7C8E241FD201290699D01B /* libOBD2-Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOBD2-Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B059DF9A3F957C82C22308A08952C15 /* Pods-phev-odb2-phev-odb2UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phev-odb2-phev-odb2UITests-dummy.m"; sourceTree = "<group>"; };
+		88D4296171C0B74472BC5F2C86D29179 /* CommandMode02.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandMode02.swift; path = "OBD2-Swift/Classes/Command/CommandMode02.swift"; sourceTree = "<group>"; };
+		88F8DB72EA6F419616496132235DC3DA /* Package.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Package.swift; path = "OBD2-Swift/Classes/Model/Package.swift"; sourceTree = "<group>"; };
+		8B7EB32F00CA8BDC762EB8FEC573F0BC /* Pods-phev-odb2Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phev-odb2Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8D06EB151DE7C888284533E02BA4C05B /* Pods-phev-odb2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phev-odb2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8D492B3E805545D3C4AA4A870037FA06 /* StreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamReader.swift; path = "OBD2-Swift/Classes/Stream/StreamReader.swift"; sourceTree = "<group>"; };
+		8FA6420BE62845194AA92F7DF9BBF71E /* Descriptor03.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Descriptor03.swift; path = "OBD2-Swift/Classes/Parser/Descriptor03.swift"; sourceTree = "<group>"; };
+		8FB16BB37171188F78438A52DB09ADBA /* OBD2-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OBD2-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		90DD236E30FB3CC0DB09B37FA1D05B7C /* Pods-phev-odb2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phev-odb2.debug.xcconfig"; sourceTree = "<group>"; };
+		955766237059DC958D3584FF30BB57ED /* SensorDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SensorDescriptor.swift; path = "OBD2-Swift/Classes/Classes/SensorDescriptor.swift"; sourceTree = "<group>"; };
+		98882D8C8EB9F1D18EC091AC65F52FC2 /* Pods-phev-odb2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phev-odb2-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7333B3B1EB833F076212CBCF0F60ED6 /* libPods-phev-odb2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-phev-odb2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A742AF21723FD82E249A865327E8BAA8 /* OBD2-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OBD2-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		A907FC242D40EDDC80B449E3F9383541 /* ScanState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScanState.swift; path = "OBD2-Swift/Classes/Model/ScanState.swift"; sourceTree = "<group>"; };
+		AECC44C40589F2BC31EFE315FE7AFB35 /* SensorDescriptorTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SensorDescriptorTable.swift; path = "OBD2-Swift/Classes/Parser/SensorDescriptorTable.swift"; sourceTree = "<group>"; };
+		AFD62463AE40B2887C9E43772591AF2A /* StreamError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamError.swift; path = "OBD2-Swift/Classes/Stream/StreamError.swift"; sourceTree = "<group>"; };
+		B0F7A039B1CAB67A3A155E8954314F6B /* Pods-phev-odb2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-phev-odb2-umbrella.h"; sourceTree = "<group>"; };
+		B9DE8BE837709054BFC96DE2C66AA41F /* libPods-phev-odb2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-phev-odb2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A705D1E25260A2CA69A8E8B83EFCEB /* OpenOBDConnectionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenOBDConnectionOperation.swift; path = "OBD2-Swift/Classes/Operations/OpenOBDConnectionOperation.swift"; sourceTree = "<group>"; };
+		C36BA112C37F899BD339DAEE59108A40 /* Pods-phev-odb2-phev-odb2UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phev-odb2-phev-odb2UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C6789060AAEC8C224C115E933B54AB01 /* Pods-phev-odb2-phev-odb2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phev-odb2-phev-odb2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4FF6407228C4397BB93520539B3492 /* SensorObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SensorObserver.swift; path = "OBD2-Swift/Classes/Observer/SensorObserver.swift"; sourceTree = "<group>"; };
+		D299C72089F537A7BCE153459646A761 /* Scanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scanner.swift; path = "OBD2-Swift/Classes/Scanner/Scanner.swift"; sourceTree = "<group>"; };
+		DDD9548A1A6B6AF1F6869174FCCE0B33 /* CommandMode01.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CommandMode01.swift; path = "OBD2-Swift/Classes/Command/CommandMode01.swift"; sourceTree = "<group>"; };
+		E2C102DC2BF59A4A24FD93354EC8D07D /* OBD2-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "OBD2-Swift.modulemap"; sourceTree = "<group>"; };
+		E9328E6A004B25F49D71DE8B7F4F0E89 /* libPods-phev-odb2-phev-odb2UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-phev-odb2-phev-odb2UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB243B5FC321E182D55D237032AEB934 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = "OBD2-Swift/Classes/Logger.swift"; sourceTree = "<group>"; };
+		F0439AAA5FB12A77147BC4D2275DCA69 /* Pods-phev-odb2Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phev-odb2Tests-dummy.m"; sourceTree = "<group>"; };
+		F09D52BB9DE13587199D0FECA5B0D43A /* InitScanerOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InitScanerOperation.swift; path = "OBD2-Swift/Classes/Operations/InitScanerOperation.swift"; sourceTree = "<group>"; };
+		F0DDFCC0DE08B0504F8133D9685F1887 /* StreamHandleOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamHandleOperation.swift; path = "OBD2-Swift/Classes/Operations/StreamHandleOperation.swift"; sourceTree = "<group>"; };
+		FD07E74FD6C64939DA71E964044BDF6B /* Pods-phev-odb2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phev-odb2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D7D84B97DB813E34003D5DFF7FFA396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752ABBF78362495DB6BD977F52219530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5BC0D3B54F30F12003C02DB415F686 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFE513BD504410AECB7C0772FD42901F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32A57103581A339A29F7FACC4273A1E5 /* Pods-phev-odb2 */ = {
+			isa = PBXGroup;
+			children = (
+				0A5EA8F90F0BFAAD7933010E2EBB6297 /* Pods-phev-odb2.modulemap */,
+				1CE22BA8749D4EAEF985207C25BBB678 /* Pods-phev-odb2-acknowledgements.markdown */,
+				98882D8C8EB9F1D18EC091AC65F52FC2 /* Pods-phev-odb2-acknowledgements.plist */,
+				5BF6352F0AA1FAE9C72D607B6AD4F1DD /* Pods-phev-odb2-dummy.m */,
+				B0F7A039B1CAB67A3A155E8954314F6B /* Pods-phev-odb2-umbrella.h */,
+				90DD236E30FB3CC0DB09B37FA1D05B7C /* Pods-phev-odb2.debug.xcconfig */,
+				FD07E74FD6C64939DA71E964044BDF6B /* Pods-phev-odb2.release.xcconfig */,
+			);
+			name = "Pods-phev-odb2";
+			path = "Target Support Files/Pods-phev-odb2";
+			sourceTree = "<group>";
+		};
+		56879601BAEBE7E7ECEDC0D5657FF4B7 /* OBD2-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2B0D9D53B26EA6288F1FF8B3FE2057D9 /* Command.swift */,
+				DDD9548A1A6B6AF1F6869174FCCE0B33 /* CommandMode01.swift */,
+				88D4296171C0B74472BC5F2C86D29179 /* CommandMode02.swift */,
+				67DB520885F833D8318EC379E0FCC3DA /* CommandMode03.swift */,
+				6841ECEC5BB6A2E335A0C70C56BF1904 /* CommandMode09.swift */,
+				4CB1939C96E7AC43BAD93C13AAB88BD7 /* CommandOperation.swift */,
+				2232937D014D29C97B3148215CF5C17A /* DataRequest.swift */,
+				6D04620026926F31753686A2A1BCCE47 /* Descriptor01.swift */,
+				8FA6420BE62845194AA92F7DF9BBF71E /* Descriptor03.swift */,
+				652223A7F0C570285702523444DA57C0 /* Descriptor09.swift */,
+				0642EB255D71AF2D9C79119089D1B639 /* DescriptorProtocol.swift */,
+				4AAC32713C06E25DEB124439D81A2602 /* GloablCalculator.swift */,
+				F09D52BB9DE13587199D0FECA5B0D43A /* InitScanerOperation.swift */,
+				EB243B5FC321E182D55D237032AEB934 /* Logger.swift */,
+				20CAFCC19E995C5C996DC34B6AD23736 /* Macros.swift */,
+				6B2E3FAB2BE0F33102AA0CA4BE590362 /* Mode.swift */,
+				002DEAF03E5B13C4446335775DB35D66 /* OBD2Facade.swift */,
+				49DE7A6A5958A9A69D8DAA8AF41E5CAC /* OBD2Swift.h */,
+				C1A705D1E25260A2CA69A8E8B83EFCEB /* OpenOBDConnectionOperation.swift */,
+				88F8DB72EA6F419616496132235DC3DA /* Package.swift */,
+				0E9F394B40B8876C75650B7DEFDF2C4B /* Parser.swift */,
+				1D7361194DE6B3090EAEC629127377A4 /* ProtocolModelDescription.swift */,
+				6D4EEEC71B33564527DE954EAED179C3 /* Response.swift */,
+				D299C72089F537A7BCE153459646A761 /* Scanner.swift */,
+				2E64456A59DEA99E65B89C0F0E2BC20A /* ScanProtocol.swift */,
+				A907FC242D40EDDC80B449E3F9383541 /* ScanState.swift */,
+				955766237059DC958D3584FF30BB57ED /* SensorDescriptor.swift */,
+				AECC44C40589F2BC31EFE315FE7AFB35 /* SensorDescriptorTable.swift */,
+				74EBAFC89803A2711702EA42EA09E4FD /* SensorList.swift */,
+				CB4FF6407228C4397BB93520539B3492 /* SensorObserver.swift */,
+				AFD62463AE40B2887C9E43772591AF2A /* StreamError.swift */,
+				F0DDFCC0DE08B0504F8133D9685F1887 /* StreamHandleOperation.swift */,
+				11A46DAF9EA35037939F0F1BD09CC826 /* StreamHolder.swift */,
+				8D492B3E805545D3C4AA4A870037FA06 /* StreamReader.swift */,
+				1CE43728AB70C91064F27CAB15CF3120 /* StreamWriter.swift */,
+				73DB67DE6B9D5C2A4B9D9375C9FDEA64 /* StringDescriptor.swift */,
+				8BADDFC05EB57189697FEC4DF610D4CC /* Support Files */,
+			);
+			path = "OBD2-Swift";
+			sourceTree = "<group>";
+		};
+		64C65E86DFAA8067DC1F0B93266F31F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56879601BAEBE7E7ECEDC0D5657FF4B7 /* OBD2-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BADDFC05EB57189697FEC4DF610D4CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2C102DC2BF59A4A24FD93354EC8D07D /* OBD2-Swift.modulemap */,
+				2C08CD906B4942F654649899C4899808 /* OBD2-Swift-dummy.m */,
+				54535590065505E11616A162F15DC733 /* OBD2-Swift-prefix.pch */,
+				41DB0CB5AB2D8CC110F0C68E49E27CE2 /* OBD2-Swift-umbrella.h */,
+				8FB16BB37171188F78438A52DB09ADBA /* OBD2-Swift.debug.xcconfig */,
+				A742AF21723FD82E249A865327E8BAA8 /* OBD2-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OBD2-Swift";
+			sourceTree = "<group>";
+		};
+		A76172206B9146BC8F3897DE6F07B324 /* Pods-phev-odb2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8B7EB32F00CA8BDC762EB8FEC573F0BC /* Pods-phev-odb2Tests-acknowledgements.markdown */,
+				2C92240516795FEC7BBBCE675CAA45A6 /* Pods-phev-odb2Tests-acknowledgements.plist */,
+				F0439AAA5FB12A77147BC4D2275DCA69 /* Pods-phev-odb2Tests-dummy.m */,
+				120FB4CE7F0B6A62F2DB27794560E8A8 /* Pods-phev-odb2Tests.debug.xcconfig */,
+				8D06EB151DE7C888284533E02BA4C05B /* Pods-phev-odb2Tests.release.xcconfig */,
+			);
+			name = "Pods-phev-odb2Tests";
+			path = "Target Support Files/Pods-phev-odb2Tests";
+			sourceTree = "<group>";
+		};
+		B8066B187AEA2BCBC9D4B14324546BEB /* Pods-phev-odb2-phev-odb2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A57EF44C213E75B56EAB088929E2584 /* Pods-phev-odb2-phev-odb2UITests.modulemap */,
+				3D3E9DCE0EE54AC04BE4AF5B6D416D80 /* Pods-phev-odb2-phev-odb2UITests-acknowledgements.markdown */,
+				C36BA112C37F899BD339DAEE59108A40 /* Pods-phev-odb2-phev-odb2UITests-acknowledgements.plist */,
+				7B059DF9A3F957C82C22308A08952C15 /* Pods-phev-odb2-phev-odb2UITests-dummy.m */,
+				28F66DFCD0DC326753736C4CB3713641 /* Pods-phev-odb2-phev-odb2UITests-umbrella.h */,
+				C6789060AAEC8C224C115E933B54AB01 /* Pods-phev-odb2-phev-odb2UITests.debug.xcconfig */,
+				5CF36A74837EE9697917AB4A57A6179A /* Pods-phev-odb2-phev-odb2UITests.release.xcconfig */,
+			);
+			name = "Pods-phev-odb2-phev-odb2UITests";
+			path = "Target Support Files/Pods-phev-odb2-phev-odb2UITests";
+			sourceTree = "<group>";
+		};
+		BF5C584AB7B2CE6CA1CE3FAEE36468FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76B48224BF7C8E241FD201290699D01B /* libOBD2-Swift.a */,
+				B9DE8BE837709054BFC96DE2C66AA41F /* libPods-phev-odb2.a */,
+				E9328E6A004B25F49D71DE8B7F4F0E89 /* libPods-phev-odb2-phev-odb2UITests.a */,
+				A7333B3B1EB833F076212CBCF0F60ED6 /* libPods-phev-odb2Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				64C65E86DFAA8067DC1F0B93266F31F7 /* Pods */,
+				BF5C584AB7B2CE6CA1CE3FAEE36468FF /* Products */,
+				F75F915900EC84B8067D14E9A7902408 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F75F915900EC84B8067D14E9A7902408 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32A57103581A339A29F7FACC4273A1E5 /* Pods-phev-odb2 */,
+				B8066B187AEA2BCBC9D4B14324546BEB /* Pods-phev-odb2-phev-odb2UITests */,
+				A76172206B9146BC8F3897DE6F07B324 /* Pods-phev-odb2Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22D026C13AF69E8C0E90E673080F3759 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0FFC4B0550AEC55DCF06994D4958A9 /* Pods-phev-odb2-phev-odb2UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A00C160A148532D233F92C7DB77B00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56784A530137CEA98D14BF9368D6D66D /* Pods-phev-odb2-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958CC76911E6B88D70AF46B784C49C15 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC174890AFA5B6D1D6766D9022641177 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E266567C435273FEA581E7CA5EFAB420 /* OBD2-Swift-umbrella.h in Headers */,
+				4EF82A005207CB23BDAADCED5A98CF6C /* OBD2Swift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3BCF90C201D1EA20AF037A4548AE30F0 /* Pods-phev-odb2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEF4127A0FD1A05158260418D7107363 /* Build configuration list for PBXNativeTarget "Pods-phev-odb2Tests" */;
+			buildPhases = (
+				958CC76911E6B88D70AF46B784C49C15 /* Headers */,
+				758E3481F154E54B068D393F17105805 /* Sources */,
+				BFE513BD504410AECB7C0772FD42901F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4CA9BCE76294B0154719D08BFAB97BD /* PBXTargetDependency */,
+			);
+			name = "Pods-phev-odb2Tests";
+			productName = "Pods-phev-odb2Tests";
+			productReference = A7333B3B1EB833F076212CBCF0F60ED6 /* libPods-phev-odb2Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3F4495EB810B8156B2D91F47F8D4CF3D /* Pods-phev-odb2-phev-odb2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B222253041D247E1B868C96E6BEA95F /* Build configuration list for PBXNativeTarget "Pods-phev-odb2-phev-odb2UITests" */;
+			buildPhases = (
+				22D026C13AF69E8C0E90E673080F3759 /* Headers */,
+				7BEB33908926428C6B8688BB220DE611 /* Sources */,
+				0D7D84B97DB813E34003D5DFF7FFA396 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8312CB00AA56B34CF4234453FB7AD718 /* PBXTargetDependency */,
+			);
+			name = "Pods-phev-odb2-phev-odb2UITests";
+			productName = "Pods-phev-odb2-phev-odb2UITests";
+			productReference = E9328E6A004B25F49D71DE8B7F4F0E89 /* libPods-phev-odb2-phev-odb2UITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		92A1B9DCB60E7E1322CA9AB8B8B1208D /* OBD2-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64F884581D7CECF012EED3576586A22 /* Build configuration list for PBXNativeTarget "OBD2-Swift" */;
+			buildPhases = (
+				BC174890AFA5B6D1D6766D9022641177 /* Headers */,
+				48E14B0A02F7DF80B867B2FE0831C84C /* Sources */,
+				752ABBF78362495DB6BD977F52219530 /* Frameworks */,
+				F9BF9C3358CDD5731AF6EB9D9FCFC621 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OBD2-Swift";
+			productName = "OBD2-Swift";
+			productReference = 76B48224BF7C8E241FD201290699D01B /* libOBD2-Swift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF3B42015A94FEE06DF7358F507B572E /* Pods-phev-odb2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C705622C19082FEFFACADB76E7C6C142 /* Build configuration list for PBXNativeTarget "Pods-phev-odb2" */;
+			buildPhases = (
+				63A00C160A148532D233F92C7DB77B00 /* Headers */,
+				DE72609F29687ACCBF2877E206386011 /* Sources */,
+				9F5BC0D3B54F30F12003C02DB415F686 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341A6FA766DA8E8CB7D869492D3BCF17 /* PBXTargetDependency */,
+			);
+			name = "Pods-phev-odb2";
+			productName = "Pods-phev-odb2";
+			productReference = B9DE8BE837709054BFC96DE2C66AA41F /* libPods-phev-odb2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BF5C584AB7B2CE6CA1CE3FAEE36468FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92A1B9DCB60E7E1322CA9AB8B8B1208D /* OBD2-Swift */,
+				AF3B42015A94FEE06DF7358F507B572E /* Pods-phev-odb2 */,
+				3F4495EB810B8156B2D91F47F8D4CF3D /* Pods-phev-odb2-phev-odb2UITests */,
+				3BCF90C201D1EA20AF037A4548AE30F0 /* Pods-phev-odb2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F9BF9C3358CDD5731AF6EB9D9FCFC621 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/OBD2/OBD2-Swift.modulemap",
+				"${PODS_ROOT}/Headers/Public/OBD2/OBD2-Swift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/OBD2-Swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/OBD2/OBD2-Swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/OBD2/OBD2-Swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48E14B0A02F7DF80B867B2FE0831C84C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE9D0F650E4AC60DF5449A7C78F4EC1B /* Command.swift in Sources */,
+				2FBCE616346ED91429845C5D02FE907E /* CommandMode01.swift in Sources */,
+				D7A23AE7E49986894E0D0C52982D7323 /* CommandMode02.swift in Sources */,
+				7F31244407E96AB9F99C7D57D523C98A /* CommandMode03.swift in Sources */,
+				FA68B905FE01F3F9E89640B77045761E /* CommandMode09.swift in Sources */,
+				0AB2B411CB10156087E5E35364633BDD /* CommandOperation.swift in Sources */,
+				88F65EADADCD47B7C726537B7573C85F /* DataRequest.swift in Sources */,
+				DCF6A2B57FE6903C27F04E2B649F3B1D /* Descriptor01.swift in Sources */,
+				FB20F2444AAFEFE9FEDA833939BE317B /* Descriptor03.swift in Sources */,
+				02BFA38247437DDE285E68EEDB7D8F9B /* Descriptor09.swift in Sources */,
+				2FEF9E60BF926D9406B3E30E6D279CB6 /* DescriptorProtocol.swift in Sources */,
+				C17D5180184DC5E6CA5815DC4412F8CC /* GloablCalculator.swift in Sources */,
+				E492F6DCB3566AFEBE65052744DC7AF7 /* InitScanerOperation.swift in Sources */,
+				193414F1E526DC5FC45111D896AD59D9 /* Logger.swift in Sources */,
+				FAA314A52131DCBDC1F10A18B9C89F04 /* Macros.swift in Sources */,
+				B553C83DA809E8B7708C1226677EA741 /* Mode.swift in Sources */,
+				E86171E8A548E43395D69C3FC947A38F /* OBD2-Swift-dummy.m in Sources */,
+				E3C9204C50AF65B1B28B8C9BB1A6CF51 /* OBD2Facade.swift in Sources */,
+				8DFB3FFBC88E97C24ADEC12017B799E9 /* OpenOBDConnectionOperation.swift in Sources */,
+				E2A756C3410862FEBBA86AE7A3D3A618 /* Package.swift in Sources */,
+				3668020B4402E7A4C8F980506E6AC082 /* Parser.swift in Sources */,
+				0F57C2AF1CA98B571639092153BE6BFA /* ProtocolModelDescription.swift in Sources */,
+				7C941419BF40111AE5D2C54ACD1450F6 /* Response.swift in Sources */,
+				FB4050D6F562B59E225C7F4D2913B9AF /* Scanner.swift in Sources */,
+				D7402D8BD5CEBCBBDE1F54632714CE4B /* ScanProtocol.swift in Sources */,
+				EEC04E006D27FA9ABD07287E6C8BC3E5 /* ScanState.swift in Sources */,
+				9F0CC50087A87B6A9F47A08CC9269527 /* SensorDescriptor.swift in Sources */,
+				948FACE587773790EFB6E39E83C5F810 /* SensorDescriptorTable.swift in Sources */,
+				5C30823E67F88BB03A50E7D4BECE1766 /* SensorList.swift in Sources */,
+				70E47361D0200286DB06D20752B74249 /* SensorObserver.swift in Sources */,
+				9AED6C99B92AFCE877F123036BC825A8 /* StreamError.swift in Sources */,
+				A0CEE9E0BBAF65BD03D86AA9970B0C45 /* StreamHandleOperation.swift in Sources */,
+				7106F6B407518DAEE50190C32904CB44 /* StreamHolder.swift in Sources */,
+				44FF284EA21A068321ABCB8E0BE92FD1 /* StreamReader.swift in Sources */,
+				FFD09583BA12EE5833EB4121F09C59D3 /* StreamWriter.swift in Sources */,
+				D2392062096007C5932EB74A43564715 /* StringDescriptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758E3481F154E54B068D393F17105805 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9036956376B444D223120E0F060C1D58 /* Pods-phev-odb2Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEB33908926428C6B8688BB220DE611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8967C566D388FF04558B78E352B620E /* Pods-phev-odb2-phev-odb2UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE72609F29687ACCBF2877E206386011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AC65E71125A04E478B5836C03E96C7 /* Pods-phev-odb2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		341A6FA766DA8E8CB7D869492D3BCF17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OBD2-Swift";
+			target = 92A1B9DCB60E7E1322CA9AB8B8B1208D /* OBD2-Swift */;
+			targetProxy = 6E2E96C391282C7CCD64335C0768A76F /* PBXContainerItemProxy */;
+		};
+		8312CB00AA56B34CF4234453FB7AD718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OBD2-Swift";
+			target = 92A1B9DCB60E7E1322CA9AB8B8B1208D /* OBD2-Swift */;
+			targetProxy = 0937830DAFF88C4FB0CAB07BA08CDBEF /* PBXContainerItemProxy */;
+		};
+		C4CA9BCE76294B0154719D08BFAB97BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-phev-odb2";
+			target = AF3B42015A94FEE06DF7358F507B572E /* Pods-phev-odb2 */;
+			targetProxy = 3BA0E6C3786D09E1855126F6A9006B88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CE9A1BAB4A153199F5A1A40E457E639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF36A74837EE9697917AB4A57A6179A /* Pods-phev-odb2-phev-odb2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-phev-odb2-phev-odb2UITests/Pods-phev-odb2-phev-odb2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		298BC0C79F9EC6C6282C25AC98A82B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6789060AAEC8C224C115E933B54AB01 /* Pods-phev-odb2-phev-odb2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-phev-odb2-phev-odb2UITests/Pods-phev-odb2-phev-odb2UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3479AD87443227F55701B15BED563D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB16BB37171188F78438A52DB09ADBA /* OBD2-Swift.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OBD2-Swift/OBD2-Swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = "Headers/Public/OBD2/OBD2-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OBD2;
+				PRODUCT_NAME = "OBD2-Swift";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64019B1E828542525E06A151F3989D6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120FB4CE7F0B6A62F2DB27794560E8A8 /* Pods-phev-odb2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65BB109F623F1C18CFE62E894C8F8B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A742AF21723FD82E249A865327E8BAA8 /* OBD2-Swift.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OBD2-Swift/OBD2-Swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = "Headers/Public/OBD2/OBD2-Swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = OBD2;
+				PRODUCT_NAME = "OBD2-Swift";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9753D1A4C237B62296003B74188A4836 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D06EB151DE7C888284533E02BA4C05B /* Pods-phev-odb2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B05185A205FB9251B57C33CC42126F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD07E74FD6C64939DA71E964044BDF6B /* Pods-phev-odb2.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-phev-odb2/Pods-phev-odb2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA53A92A33A5668E8CBE1692DC80EA03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DD236E30FB3CC0DB09B37FA1D05B7C /* Pods-phev-odb2.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-phev-odb2/Pods-phev-odb2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B222253041D247E1B868C96E6BEA95F /* Build configuration list for PBXNativeTarget "Pods-phev-odb2-phev-odb2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				298BC0C79F9EC6C6282C25AC98A82B42 /* Debug */,
+				0CE9A1BAB4A153199F5A1A40E457E639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C705622C19082FEFFACADB76E7C6C142 /* Build configuration list for PBXNativeTarget "Pods-phev-odb2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA53A92A33A5668E8CBE1692DC80EA03 /* Debug */,
+				9B05185A205FB9251B57C33CC42126F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D64F884581D7CECF012EED3576586A22 /* Build configuration list for PBXNativeTarget "OBD2-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3479AD87443227F55701B15BED563D4B /* Debug */,
+				65BB109F623F1C18CFE62E894C8F8B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEF4127A0FD1A05158260418D7107363 /* Build configuration list for PBXNativeTarget "Pods-phev-odb2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64019B1E828542525E06A151F3989D6A /* Debug */,
+				9753D1A4C237B62296003B74188A4836 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

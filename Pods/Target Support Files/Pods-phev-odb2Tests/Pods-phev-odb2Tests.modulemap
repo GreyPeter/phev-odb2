@@ -1,0 +1,6 @@
+framework module Pods_phev_odb2Tests {
+  umbrella header "Pods-phev-odb2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
